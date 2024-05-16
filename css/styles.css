@@ -1,3 +1,20 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -5,11 +22,26 @@ body {
 }
 
 ul {
+    margin: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+/* Take with Maket */
+.container {
+    max-width: 1128;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
 /*=====================================*/
