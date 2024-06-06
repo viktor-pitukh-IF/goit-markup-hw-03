@@ -42,7 +42,6 @@ img {
     padding-right: 156px;
     margin-left: 120px;
     margin-right: 120px;
-    /* margin: 0 auto; */
 }
 
 /*=====================================*/
@@ -54,6 +53,11 @@ img {
     padding-bottom: 24px;
 }
 
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -62,6 +66,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: flex;
 }
 
 .header-logo span {
