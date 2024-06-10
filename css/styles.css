@@ -198,10 +198,11 @@ img {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-basis: calc ((100% - 3 * 24px) / 4);
 }
 
 .content-item {
-    flex-basis: calc ((100% - 3 * 24px) / 4);
+    
 }
 
 .content-list-item-title {
