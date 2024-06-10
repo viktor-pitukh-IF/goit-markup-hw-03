@@ -57,16 +57,18 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
-}
-
-.header-navigation {
     display: flex;
-    align-items: center;
-    display: flex;
-    flex-grow: 1;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.header-navigation {
+    /* display: flex; */
+    align-items: center;
+
+    flex-grow: 1;
+
 }
 
 .header-logo {
@@ -112,8 +114,6 @@ img {
     display: flex;
     align-items: right;
     gap: 40px;
-    display: flex;
-
 }
 
 .header-addr-link {
