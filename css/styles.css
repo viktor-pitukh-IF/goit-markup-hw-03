@@ -100,7 +100,7 @@ img {
 
 .header-addr-list {
     display: flex;
-    align-items: center;
+    align-items: right;
     gap: 40px;
 
 }
@@ -164,8 +164,8 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: row; */
-    gap: 10px;
+    flex-direction: row;
+    */ gap: 10px;
     margin-left: 482px;
 }
 
@@ -180,7 +180,7 @@ img {
 
 .content {
     margin-top: 120px;
-    margin-bottom: 120px;    
+    margin-bottom: 120px;
 }
 
 
@@ -218,7 +218,7 @@ img {
     text-align: center;
     background-color: #F4F4FD;
     padding-bottom: 120px;
-    
+
 }
 
 .team-list {
@@ -271,7 +271,7 @@ img {
 /*=========== Our Portfolio ===========*/
 .portfolio {
     padding-bottom: 120px;
-    
+
 }
 
 .portfolio-title {
