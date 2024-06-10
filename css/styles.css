@@ -38,6 +38,7 @@ img {
 /* Take with Maket */
 .container {
     max-width: 1158px;
+    margin: 0 auto;
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -56,13 +57,12 @@ img {
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
     display: flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
 }
 
 .header .container {
     /* display: flex; */
-    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -89,7 +89,7 @@ img {
     color: #2e2f42;
     display: flex;
     align-items: center;
-    /* margin-right: 76px; */
+
 }
 
 .header-menu-list {
@@ -121,10 +121,6 @@ img {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.header-addr-item {
-    /* gap: 40px; */
 }
 
 .header-logo:hover,
@@ -320,14 +316,16 @@ img {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding-bottom: 48px;
+    column-gap: 24px;
+    row-gap: 48px;
+    /* padding-bottom: 48px; */
     flex-basis: calc ((100% - 2 * 24px) / 3);
 }
 
 .portfolio-list-item {
-    row-gap: 48px;
+    /* row-gap: 48px; */
     margin-bottom: 48px;
+    /* padding: 32px 16px; */
 
 }
 
