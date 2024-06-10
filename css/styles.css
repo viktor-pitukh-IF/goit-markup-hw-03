@@ -52,12 +52,13 @@ img {
 
 /*================ header =============*/
 .header {
+    width: 1158px;
     background-color: #fff;
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
     display: flex;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 
 }
 
@@ -219,8 +220,8 @@ img {
     letter-spacing: 0.02em;
 }
 
-.visually-hidden:not(:focus):not(:active) {
-    /* border: 0;
+/* .visually-hidden:not(:focus):not(:active) {
+     border: 0;
     clip: rect(0 0 0 0);
     height: auto;
     margin: 0;
@@ -228,9 +229,13 @@ img {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; */
+    white-space: nowrap;
     visibility: hidden;
 
+} */
+
+.h2-hidden {
+    visibility: hidden;
 }
 
 /*=====================================*/
