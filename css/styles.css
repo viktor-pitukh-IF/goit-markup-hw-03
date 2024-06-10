@@ -56,14 +56,17 @@ img {
     background-color: #fff;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom-style: solid;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-navigation {
     display: flex;
     align-items: center;
+    display: flex;
     flex-grow: 1;
-
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-logo {
@@ -76,14 +79,14 @@ img {
     color: #4d5ae5;
     display: flex;
     align-items: left;
-
+    margin-right: 76px;
 }
 
 .header-logo span {
     color: #2e2f42;
     display: flex;
     align-items: center;
-    margin-right: 76px;
+    /* margin-right: 76px; */
 }
 
 .header-menu-list {
@@ -98,6 +101,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .header-addr {
@@ -108,6 +112,7 @@ img {
     display: flex;
     align-items: right;
     gap: 40px;
+    display: flex;
 
 }
 
@@ -115,6 +120,10 @@ img {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.header-addr-item {
+    /* gap: 40px; */
 }
 
 .header-logo:hover,
@@ -133,12 +142,13 @@ img {
 
 .hero {
     background-color: #2e2f42;
+    padding: 188px 0;
     /* height: 600px; */
 }
 
 
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -162,11 +172,12 @@ img {
     border: none;
     padding: 16px 32px;
     /* Flex layout figma */
-    display: flex;
-    align-items: flex-start;
+    display: block;
+    min-width: 169px;
+    /* align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 10px;
+    gap: 10px; */
     margin-left: 482px;
 }
 
@@ -192,7 +203,7 @@ img {
 }
 
 .content-item {
-    width: calc ((100% - 3 * 24px) / 4);
+    flex-basis: calc ((100% - 3 * 24px) / 4);
 }
 
 .content-list-item-title {
@@ -211,6 +222,18 @@ img {
     letter-spacing: 0.02em;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
 /*=====================================*/
 
 /*=============== Our Team ============*/
@@ -226,8 +249,11 @@ img {
     display: flex;
     align-items: center;
     gap: 24px;
-    width: calc ((1128px - 3 * 24px) / 4);
-    border-radius: 0 0 4px 4px;
+    flex-basis: calc ((100% - 3 * 24px) / 4);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .team-title {
@@ -238,13 +264,12 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    /* padding-top: 120px; */
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
 }
 
 .team-card-content {
-    margin-top: 32px;
+    padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
 }
@@ -273,7 +298,7 @@ img {
 /*=========== Our Portfolio ===========*/
 .portfolio {
     /* padding-bottom: 120px; */
-
+    padding: 32px 16px;
 }
 
 .portfolio-title {
@@ -284,7 +309,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -294,7 +319,13 @@ img {
     align-items: center;
     gap: 24px;
     padding-bottom: 48px;
-    width: calc ((1128px - 2 * 24px) / 3);
+    flex-basis: calc ((100% - 2 * 24px) / 3);
+}
+
+.portfolio-list-item {
+    row-gap: 48px;
+    margin-bottom: 48px;
+
 }
 
 .portfolio-list-descr {
@@ -315,7 +346,7 @@ img {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-left: 16px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -332,14 +363,15 @@ img {
 .footer {
     background-color: #2e2f42;
     height: 312px;
+    padding: 100px 0;
 }
 
-.footer-wrap {
+/* .footer-wrap {
     width: 264px;
     height: 112px;
     padding-top: 100px;
     padding-bottom: 100px;
-}
+} */
 
 .footer-link {
     font-family: "Raleway", sans-serif;
@@ -349,6 +381,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-link .accent {
@@ -365,6 +399,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 /*=====================================*/
