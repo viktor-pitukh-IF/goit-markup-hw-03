@@ -227,6 +227,7 @@ img {
     align-items: center;
     gap: 24px;
     width: calc ((1128px - 3 * 24px) / 4);
+    border-radius: 0 0 4px 4px;
 }
 
 .team-title {
@@ -302,6 +303,7 @@ img {
     justify-content: center;
     flex-direction: column;
     gap: 8px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .portfolio-list-title {
