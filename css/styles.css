@@ -52,10 +52,11 @@ img {
 
 /*================ header =============*/
 .header {
-    width: 1158px;
+    /* width: 1158px; */
     background-color: #fff;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    padding 0 15px;
     border-bottom: 1px solid #e7e9fc;
     display: flex;
     margin: 0 auto;
@@ -66,6 +67,9 @@ img {
     display: flex;
     /* padding-left: 15px;
     padding-right: 15px; */
+
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-navigation {
@@ -109,7 +113,7 @@ img {
 }
 
 .header-addr {
-    display: flex;
+    /* display: flex; */
     font-style: normal;
     margin-left: 332px;
 }
@@ -200,10 +204,11 @@ img {
     display: flex;
     align-items: center;
     gap: 24px;
-}  
+    flex-basis: calc ((100% - 3 * 24px) / 4);
+}
 
 .content-item {
-    flex-basis: calc ((100% - 3 * 24px) / 4);
+    /* flex-basis: calc ((100% - 3 * 24px) / 4); */
 
 }
 
@@ -223,23 +228,16 @@ img {
     letter-spacing: 0.02em;
 }
 
-/* .visually-hidden:not(:focus):not(:active) {
-     border: 0;
-    clip: rect(0 0 0 0);
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
+.visually-hidden {
     position: absolute;
+    clip: rect(0 0 0 0);
     width: 1px;
+    height: 1px;
+    margin: -1px;
     white-space: nowrap;
-    visibility: hidden;
-
-} */
-
-.h2-hidden {
-    visibility: hidden;
+    overflow: hidden;
 }
+
 
 /*=====================================*/
 
@@ -277,7 +275,7 @@ img {
 
 .team-card-content {
     padding-top: 32px;
-    padding-left: 16px;
+    /* padding-left: 16px; */
     padding-bottom: 32px;
 }
 
