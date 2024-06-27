@@ -237,12 +237,6 @@ img {
 
 /*=============== contents ============*/
 
-.content {
-    /* margin-top: 120px; */
-    /* margin-bottom: 120px; */
-}
-
-
 .content-list {
     display: flex;
     align-items: center;
