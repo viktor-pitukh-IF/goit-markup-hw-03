@@ -39,8 +39,22 @@ img {
 .container {
     max-width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
     /* margin-left: 120px;
     margin-right: 120px; */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .section {
@@ -64,11 +78,9 @@ img {
 }
 
 .header .container {
-    width: 1158px; 
+    /* width: 1158px; */
     display: flex;
-    /* padding-left: 15px;
-    padding-right: 15px; */
-
+    align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -227,16 +239,6 @@ img {
     line-height: 1.5;
     color: #434455;
     letter-spacing: 0.02em;
-}
-
-.visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 
