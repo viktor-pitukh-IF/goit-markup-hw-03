@@ -75,10 +75,10 @@ img {
 
 .header-container {
     display: flex;
-    width: 1158px;
+    /* width: 1158px; */
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
     /* padding: 0 15px; */
 }
 
@@ -139,6 +139,10 @@ img {
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    /* Exp with internet*/
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
